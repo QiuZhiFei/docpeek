@@ -14,7 +14,7 @@
     {
         document = [[PDFDocument alloc] initWithURL: fileURL];
     }
-    
+
     [self setDocument:document];
 }
 
