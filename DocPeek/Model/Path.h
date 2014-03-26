@@ -4,5 +4,5 @@
 
 @property NSString * name;
 @property NSURL * url;
-
+@property NSInteger pathId;
 @end

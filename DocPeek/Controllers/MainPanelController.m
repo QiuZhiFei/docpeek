@@ -138,10 +138,11 @@
 - (void) tableView:(NSTableView *)tableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
     PathCollection* paths = [[NSApp delegate] pathCollection];
-    Path * path = [paths getByIndex:row];
+    //Path * path = [paths getByIndex:row];
     if ([[tableColumn identifier]  isEqual: @"Name"])
     {
-        [path setName:object];
+        [paths updateNameAt: (NSInteger) row with: (NSString *) object];
+      //  [path setName:object];
     }
 }
 

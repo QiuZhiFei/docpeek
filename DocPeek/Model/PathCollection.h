@@ -16,4 +16,5 @@
 
 - (void) removeAt: (NSInteger) index;
 
+- (void) updateNameAt: (NSInteger) index with: (NSString *) name;
 @end
