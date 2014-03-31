@@ -5,6 +5,7 @@
 {
 @private
     NSMutableArray * paths;
+    NSString * dbpath;
 }
 
 

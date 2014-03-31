@@ -14,7 +14,7 @@
     BOOL keepWindowOpen;
     
 }
-- (void) show;
+- (void) show:(NSInteger) arrowX;
 - (void) activateViewer;
 - (IBAction) openAddPathDialog:(id) sender;
 - (IBAction) removePath:(id) sender;

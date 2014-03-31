@@ -1,7 +1,5 @@
-#import "PathCollection.h"
+    #import "PathCollection.h"
 #import "FMDatabase.h"
-
-#define DB_PATH @"docpeek.db"
 
 @implementation PathCollection
 
@@ -10,9 +8,10 @@
     if (self)
     {
         paths = [NSMutableArray new];
+        dbpath = [NSString stringWithFormat:@"%@%@",[[NSBundle mainBundle] bundlePath], @"/Contents/Resources/docpeek.db"];
     }
     
-    FMDatabase * db = [FMDatabase databaseWithPath: DB_PATH];
+    FMDatabase * db = [FMDatabase databaseWithPath: dbpath];
     if (![db open])
     {
         NSLog(@"error opening db");
@@ -48,7 +47,7 @@
 - (void) addPath:(Path *)path
 {
     [paths addObject:path];
-    FMDatabase * db = [FMDatabase databaseWithPath:DB_PATH];
+    FMDatabase * db = [FMDatabase databaseWithPath:dbpath];
     if (![db open])
     {
         NSLog(@"error opening db");
@@ -73,7 +72,7 @@
 
 - (void) updateNameAt: (NSInteger) index with: (NSString *) name
 {
-    FMDatabase * db = [FMDatabase databaseWithPath:DB_PATH];
+    FMDatabase * db = [FMDatabase databaseWithPath:dbpath];
     if (![db open])
     {
         NSLog(@"error opening db");

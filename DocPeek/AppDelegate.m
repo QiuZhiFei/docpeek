@@ -18,7 +18,7 @@
     if (_mainPanelController == nil)
         _mainPanelController = [[MainPanelController alloc] initWithWindowNibName:@"MainPanel"];
     
-    [_mainPanelController show];
+    [_mainPanelController show: [_menuBarController statusItemArrowX]];
 }
 
 

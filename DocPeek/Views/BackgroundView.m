@@ -71,7 +71,8 @@
 
 - (void)setArrowX:(NSInteger)value
 {
-    _arrowX = value;
+    NSRect rect = [[self window] frame];
+    _arrowX = value - rect.origin.x;
     [self setNeedsDisplay:YES];
 }
 

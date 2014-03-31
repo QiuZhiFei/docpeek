@@ -21,6 +21,8 @@
 - (void) iconClicked
 {
     NSLog(@"icon clicked");
+    
+    [self setStatusItemArrowX:[[[self.item view] window] frame].origin.x + [[[self.item view] window] frame].size.width/2];
     [[NSApp delegate] showPanel];
 }
 

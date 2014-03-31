@@ -15,7 +15,7 @@
 		28554A7318E12EC2002EDE2E /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554A6718E12EC2002EDE2E /* FMDatabasePool.m */; };
 		28554A7418E12EC2002EDE2E /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554A6918E12EC2002EDE2E /* FMDatabaseQueue.m */; };
 		28554A7518E12EC2002EDE2E /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554A6C18E12EC2002EDE2E /* FMResultSet.m */; };
-		28554A7618E12EC2002EDE2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28554A6F18E12EC2002EDE2E /* main.m */; };
+		28554A9118E90F5A002EDE2E /* docpeek.db in Resources */ = {isa = PBXBuildFile; fileRef = 28554A8F18E90F00002EDE2E /* docpeek.db */; };
 		28947D8B18D6A6BA004F3403 /* PDFViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 28947D8A18D6A6BA004F3403 /* PDFViewer.m */; };
 		28F3BD3718D2A75300F489CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F3BD3618D2A75300F489CD /* Cocoa.framework */; };
 		28F3BD4118D2A75300F489CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28F3BD3F18D2A75300F489CD /* InfoPlist.strings */; };
@@ -63,8 +63,7 @@
 		28554A6A18E12EC2002EDE2E /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
 		28554A6B18E12EC2002EDE2E /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		28554A6C18E12EC2002EDE2E /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
-		28554A6E18E12EC2002EDE2E /* fmdb_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmdb_Prefix.pch; sourceTree = "<group>"; };
-		28554A6F18E12EC2002EDE2E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28554A8F18E90F00002EDE2E /* docpeek.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = docpeek.db; path = Data/docpeek.db; sourceTree = "<group>"; };
 		28947D8918D6A6BA004F3403 /* PDFViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewer.h; sourceTree = "<group>"; };
 		28947D8A18D6A6BA004F3403 /* PDFViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewer.m; sourceTree = "<group>"; };
 		28F3BD3318D2A75300F489CD /* DocPeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocPeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +129,6 @@
 			children = (
 				28554A5E18E12EC2002EDE2E /* extra */,
 				28554A6118E12EC2002EDE2E /* fmdb */,
-				28554A6D18E12EC2002EDE2E /* sample */,
 			);
 			name = FMDB;
 			path = src;
@@ -161,15 +159,6 @@
 				28554A6C18E12EC2002EDE2E /* FMResultSet.m */,
 			);
 			path = fmdb;
-			sourceTree = "<group>";
-		};
-		28554A6D18E12EC2002EDE2E /* sample */ = {
-			isa = PBXGroup;
-			children = (
-				28554A6E18E12EC2002EDE2E /* fmdb_Prefix.pch */,
-				28554A6F18E12EC2002EDE2E /* main.m */,
-			);
-			path = sample;
 			sourceTree = "<group>";
 		};
 		28947D8818D6A666004F3403 /* Model */ = {
@@ -244,6 +233,7 @@
 		28F3BD3D18D2A75300F489CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28554A8F18E90F00002EDE2E /* docpeek.db */,
 				28F3BD3E18D2A75300F489CD /* DocPeek-Info.plist */,
 				28F3BD3F18D2A75300F489CD /* InfoPlist.strings */,
 				28F3BD4218D2A75300F489CD /* main.m */,
@@ -356,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28554A9118E90F5A002EDE2E /* docpeek.db in Resources */,
 				28F3BD4118D2A75300F489CD /* InfoPlist.strings in Resources */,
 				28F3BD4F18D2A75300F489CD /* Images.xcassets in Resources */,
 				28F3BD4718D2A75300F489CD /* Credits.rtf in Resources */,
@@ -394,7 +385,6 @@
 				28554A7518E12EC2002EDE2E /* FMResultSet.m in Sources */,
 				28F3BD4318D2A75300F489CD /* main.m in Sources */,
 				28F3BD7C18D66AC000F489CD /* MainPanel.m in Sources */,
-				28554A7618E12EC2002EDE2E /* main.m in Sources */,
 				28554A7018E12EC2002EDE2E /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

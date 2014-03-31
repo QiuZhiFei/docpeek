@@ -6,6 +6,6 @@
 
 @interface MenuBarController : NSController <MenuBarDelegate>
 @property NSStatusItem* item;
-
+@property NSInteger statusItemArrowX;
 
 @end

@@ -72,7 +72,7 @@
     [[pdfViewer window] makeFirstResponder:nil];
 }
 
-- (void) show
+- (void) show: (NSInteger) arrowX
 {
     NSWindow* window = [self window];
     [window setAlphaValue:0];
@@ -83,7 +83,7 @@
     rect.origin.y = screen.frame.size.height - rect.size.height-[[NSStatusBar systemStatusBar] thickness];
     [window setFrame:rect display:NO];
     [[window animator] setAlphaValue:1];
-    [backgroundView setArrowX:100];
+    [backgroundView setArrowX:arrowX];
     
     [NSApp activateIgnoringOtherApps:YES];
     [window makeKeyAndOrderFront:self];

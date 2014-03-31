@@ -18,11 +18,11 @@
 	
     // Drawing code here.
 }
-
-- (void) keyDown:(NSEvent *)theEvent
-{
-    NSLog(@"key down");
-   // if ([theEvent keyCode] == 124) [(MainPanelController *) [self delegate] activateViewer];
-}
+//
+//- (void) keyDown:(NSEvent *)theEvent
+//{
+//    NSLog(@"key down");
+//   // if ([theEvent keyCode] == 124) [(MainPanelController *) [self delegate] activateViewer];
+//}
 
 @end
